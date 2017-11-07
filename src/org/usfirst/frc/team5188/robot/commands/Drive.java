@@ -12,6 +12,7 @@ public class Drive extends Command {
 	}
 
 	public void execute() {
+		//tells us if our shifter is enabled
 		SmartDashboard.putBoolean("Drive Shifter", Robot.oi.drive.getRawButton(OI.Buttons.R));
 		double shifter = Robot.oi.drive.getRawButton(OI.Buttons.R) ? 0.5 : 1.0;
 		double left;
